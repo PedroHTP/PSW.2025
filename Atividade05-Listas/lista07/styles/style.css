@@ -1,0 +1,25 @@
+.centro {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+.orange {
+    background-color: rgb(196, 150, 64);
+}
+
+.botton-margin {
+    margin-bottom: 5%;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-itens {
+    display: flex;
+    align-items: center;
+}
+
+.margin {
+    margin: 3%;
+}

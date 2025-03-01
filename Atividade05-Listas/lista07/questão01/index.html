@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de comentário</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        main {
+            width: 40%;
+        }
+        label {
+            font-weight: bold;
+        }
+        input:not([type='submit']) {
+            width: 100%;
+        }
+        textarea {
+            width: 100%;
+        }
+        input[type='submit'] {
+            border-radius: 4px;
+            border: solid 1px rgb(0, 0, 180);
+        }
+    </style>
+</head>
+<body>
+    <main class="centro">
+        <h1>Deixe um comentário</h1>
+        <form action="./index.html" method="post">
+            <span>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </span>
+            <span>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </span>
+            <span>
+                <label for="website">Website:</label>
+                <input type="url" name="website" id="website">
+            </span>
+            <span>
+                <label for="comentario">Comentário:</label><br>
+                <textarea name="comentario" id="comentario" rows="10"></textarea>
+            </span>
+            <p><strong>Observação: Seu comentário será publicado após passar pelo moderador</strong></p>
+            <input type="submit" value="Enviar Comentário">
+        </form>
+    </main>
+</body>
+</html>

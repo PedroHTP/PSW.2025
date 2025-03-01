@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-css</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro Geral</h1>
+        <div class="flex" id="dados_local">
+            <div class="box">
+                <h2>Dados pessoais</h2>
+                <div class="box-input">
+                    <label for="nome_completo">Nome completo:</label>
+                    <input type="text" name="nome_completo" id="nome_completo">
+                </div>
+                <div class="box-input">
+                    <label for="profissao">Profissão:</label>
+                    <select name="profissao" id="profissao">
+                        <option value="indefinido">Sua profissão</option>
+                        <option value="padeiro">Padeiro</option>
+                        <option value="fazendeiro">Fazendeiro</option>
+                        <option value="policial">Policial</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Localização</h2>
+                <div class="box-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="box-input">
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua">
+                </div>
+            </div>
+        </div>
+        <div class="container-line">
+            <h2>Faixa etária</h2>
+            <div class="flex">
+                <div class="box-collum">
+                    <span>
+                        <input type="radio" name="faixa_etaria" id="-20">
+                        <label for="faixa_etaria">até 20 anos</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="faixa_etaria" id="20_30">
+                        <label for="faixa_etaria">mais de 20 até 30 anos</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="faixa_etaria" id="30_40">
+                        <label for="faixa_etaria">mais de 30 até 40 anos</label>
+                    </span>
+                </div>
+                <div class="box-collum">
+                    <span>
+                        <input type="radio" name="faixa_etaria" id="40_50">
+                        <label for="faixa_etaria">mais de 40 até 50 anos</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="faixa_etaria" id="50_60">
+                        <label for="faixa_etaria">mais de 50 até 60 anos</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="faixa_etaria" id="+60">
+                        <label for="faixa_etaria">mais de 60</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-line">
+            <h2>Esporte que pratica</h2>
+                <span>
+                    <input type="checkbox" name="futebol_campo" id="futebol_campo">
+                    <label for="futebol_campo">Futebol de campo</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="futebol_salao" id="futebol_salao">
+                    <label for="futebol_salao">Futebol de salão</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="futebol_society" id="futebol_society">
+                    <label for="futebol_society">Futebol society</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="volley_quadra" id="volley_quadra">
+                    <label for="volley_quadra">Volley de Quadra</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="volley_praia" id="volley_praia">
+                    <label for="volley_praia">Volley de Praia</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="natacao_piscina" id="natacao_piscina">
+                    <label for="natacao_piscina">Natação em piscina</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="natacao_mar" id="natacao_mar">
+                    <label for="natacao_mar">Natação em mar aberto</label>
+                </span>
+        </div>
+        <div class="container-line">
+            <h2>Comentário</h2>
+            <div class="box-input">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="concluir">
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </div>
+    </div>
+</body>
+</html>

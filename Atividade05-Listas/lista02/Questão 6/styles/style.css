@@ -1,0 +1,26 @@
+body {
+    font-size: 1.3em;
+}
+
+.underline {
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.sobreescrito {
+    font-size: 0.50em;
+    vertical-align: super;
+}
+
+.subescrito {
+    font-size: 0.50em;
+    vertical-align: sub;
+}
+
+.texto-maior {
+    font-size: 1.5em;
+}
+
+.texto-menor {
+    font-size: 0.75em;
+}

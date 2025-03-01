@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        main {
+            width: 40%;
+        }
+        #labels {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+            width: 20%;
+            align-items: flex-start;
+        }
+        label {
+            font-weight: bold;
+        }   
+        #inputs {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            input, select {
+                width: fit-content;
+            }
+        }
+        label, input, select {
+            margin: 3px;
+        }
+        
+        .margin-right {
+            margin-right: 2%;
+        }
+    </style>
+</head>
+<body>
+    <main class="centro ">
+        <form action="" method="post">
+            <div class="botton-margin">
+                <div class="orange">SISTEMA DE GESTÃO ACADÊMICA</div>
+                MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO
+            </div>
+            
+            <div class="flex">
+                <div id="labels">
+                    <label for="login">Login</label>
+                    <label for="senha">Senha</label>
+                    <label for="status">Status</label>
+                    <label for="tipo">Tipo</label>
+                    <label for="criacao">Data Criação</label>
+                    <label for="perfil">Perfil</label>
+                </div>
+                <div id="inputs">
+                    <input type="text" name="login" id="login">
+                    <input type="number" name="senha" id="senha">
+                    <select name="status" id="status">
+                        <option value="inativo">Inativo</option>
+                        <option value="ativo">Ativo</option>
+                    </select>
+                    <span class="align-itens">
+                        <input type="radio" name="tipo" id="tipo-tecnico" checked>
+                        <span class="margin-right">Técnico</span>
+                        <input type="radio" name="tipo" id="tipo-professor">
+                        <span class="margin-right">Professor</span>
+                        <input type="radio" name="tipo" id="tipo-aluno">
+                        <span>Aluno</span>
+                    </span>
+                    <input type="date" name="criacao" id="criacao">
+                    <span class="align-itens">
+                        <input type="radio" name="perfil" id="convidado" value="convidado" checked>
+                        <span class="margin-right">Convidado</span>
+                        <input type="radio" name="perfil" id="administrador" value="administrador">
+                        <span class="margin-right">Administrador</span>
+                    </span>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="align-itens" id="labels">
+                    <label for="observacoes">Observações</label>
+                </div>
+                <div>
+                    <textarea name="observacoes" id="observacoes inputs"  cols="40" rows="6"></textarea>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="align-itens" id="labels">
+                    <label for="modulos">Módulos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="compras" id="compras" value="compras">
+                    <label for="compras">Compras</label>
+                    <input type="checkbox" name="biblioteca" id="biblioteca" value="biblioteca">
+                    <label for="biblioteca">Biblioteca</label>
+                    <input type="checkbox" name="academico" id="academico" value="academico">
+                    <label for="academico">Acadêmico</label>
+                    <div>
+                        <input type="checkbox" name="documentacao" id="documentacao" value="documentacao">
+                        <label for="documentacao">Documentação</label>
+                        <input type="checkbox" name="recursos" id="recursos" value="recursos">
+                        <label for="recursos">Recursos Humanos</label>
+                    </div>
+                </div>
+            </div>
+            <div class="margin">
+                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Excluir">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
