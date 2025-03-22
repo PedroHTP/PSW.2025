@@ -20,10 +20,11 @@ h1 {
     border: 1px solid #8bc34a;
 }
 
-h2 {
+legend {
     color: #388e3c;
     margin-top: 0;
     font-size: 1.3em;
+    border: solid #8bc34a 1px;
 }
 
 label {

@@ -11,8 +11,8 @@
     <div class="container">
         <h1>Cadastro Geral</h1>
         <div class="flex" id="dados_local">
-            <div class="box">
-                <h2>Dados pessoais</h2>
+            <fieldset class="box">
+                    <legend>Dados pessoais</legend>
                 <div class="box-input">
                     <label for="nome_completo">Nome completo:</label>
                     <input type="text" name="nome_completo" id="nome_completo">
@@ -26,9 +26,10 @@
                         <option value="policial">Policial</option>
                     </select>
                 </div>
-            </div>
-            <div class="box">
-                <h2>Localização</h2>
+            </fieldset>
+            
+            <fieldset class="box">
+                <legend>Localização</legend>
                 <div class="box-input">
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email">
@@ -37,10 +38,10 @@
                     <label for="rua">Rua:</label>
                     <input type="text" name="rua" id="rua">
                 </div>
-            </div>
+            </fieldset>
         </div>
-        <div class="container-line">
-            <h2>Faixa etária</h2>
+        <fieldset class="container-line">
+            <legend>Faixa etária</legend>
             <div class="flex">
                 <div class="box-collum">
                     <span>
@@ -71,9 +72,9 @@
                     </span>
                 </div>
             </div>
-        </div>
-        <div class="container-line">
-            <h2>Esporte que pratica</h2>
+        </fieldset>
+        <fieldset class="container-line">
+            <legend>Esporte que pratica</legend>
                 <span>
                     <input type="checkbox" name="futebol_campo" id="futebol_campo">
                     <label for="futebol_campo">Futebol de campo</label>
@@ -102,14 +103,14 @@
                     <input type="checkbox" name="natacao_mar" id="natacao_mar">
                     <label for="natacao_mar">Natação em mar aberto</label>
                 </span>
-        </div>
-        <div class="container-line">
-            <h2>Comentário</h2>
+        </fieldset>
+        <fieldset class="container-line">
+            <legend>Comentário</legend>
             <div class="box-input">
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
             </div>
-        </div>
+        </fieldset>
         <div class="concluir">
             <input type="submit" value="Enviar">
             <input type="submit" value="Limpar">
